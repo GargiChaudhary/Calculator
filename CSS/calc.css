@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    color:brown;
+    font-family: poppins;
+}
+
+.full{
+    position:relative;
+    height:100vh;
+    background-image: url("../images/pink.jpg");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+table{
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+    -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    width:300px;
+    height:500px;
+    border-top: 1px solid rgba(255, 255, 255, 0.322);
+    border-left: 1px solid rgba(255,255,255,0.500);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.562);
+}
+
+td{
+    padding:0px;
+    align-content: center;
+}
+
+#box{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display:flex;
+    flex-direction: column;
+    
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#result{
+    height:100px;
+    width:300px;
+    background-color:transparent;
+    font-family: poppins;
+    font-size:25px;
+    text-align: right;
+    padding:10px;
+    border: 1px solid rgba(0, 0, 0, 0.089);
+}
+
+input[type= button]{
+    width:100%;
+    height:100%;
+    font-family: poppins;
+    font-size: 20px;
+    background: transparent;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.089);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type= button]:hover{
+    transition: 0s;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+input[type= button]:active{
+    transition: 0s;
+    background-color: brown;
+}
+
+.footer{
+    font-size:20px;
+    position:absolute;
+    bottom:0;
+    left:38%;
+}
+
+
